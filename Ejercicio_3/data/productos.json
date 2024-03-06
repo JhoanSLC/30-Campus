@@ -1,0 +1,16 @@
+{
+    "1": {
+        "id": "1",
+        "nombre": "sihdf",
+        "valor unitario": "415",
+        "stockmin": "15",
+        "stockmax": "156"
+    },
+    "165": {
+        "id": "165",
+        "nombre": "dfjg",
+        "valor unitario": "23",
+        "stockmin": "",
+        "stockmax": "563"
+    }
+}
