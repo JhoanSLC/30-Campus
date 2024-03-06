@@ -11,19 +11,14 @@ import modules.convert as conv
 
 
 if __name__ == '__main__':
-    op = menu.main_menu()
-    
-    #Peso a dolar
-    if op == '1':
+    isapprunning = True
+    while isapprunning:
+        menu.scr.clean_screen()
+        op = menu.main_menu()
+        
+        if op == '5':
+            isapprunning = False
+            break
         dolar = conv.convert(op)
-        print(dolar)
-        menu.scr.pause_screen()
-    #Peso a euros
-    if op == '2':
-        pass
-    #Euro a peso
-    if op == '3':
-        pass
-    #Peso a yen
-    if op == '4':
-        pass
+
+        

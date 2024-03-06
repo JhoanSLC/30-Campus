@@ -23,21 +23,50 @@ def convert(op):
         moneda_1 = 'peso'
         moneda_2 = 'yen'
     scr.clean_screen()
-    while True:
-        try:
-            peso = float(input(f'Ingrese el valor de {moneda_1} a convertir en {moneda_2} (solo números): '))
-            if peso <= 0:
-                print('Digite un valor positivo: ')
+    if op == '3':
+        while True:
+            try:
+                euro_a_convertir = float(input(f'Ingrese el valor de {moneda_1} a convertir en {moneda_2} (solo números): '))
+                if euro_a_convertir <= 0:
+                    print('Digite un valor positivo: ')
+                    scr.pause_screen()
+                    convert()
+                break
+            except:
+                print('Por favor digite un valor correcto')
                 scr.pause_screen()
-                convert()
-            break
-        except:
-            print('Por favor digite un valor correcto')
-            scr.pause_screen()
+    else:
+        while True:
+            try:
+                peso = float(input(f'Ingrese el valor de {moneda_1} a convertir en {moneda_2} (solo números): '))
+                if peso <= 0:
+                    print('Digite un valor positivo: ')
+                    scr.pause_screen()
+                    convert()
+                break
+            except:
+                print('Por favor digite un valor correcto')
+                scr.pause_screen()
     if op == '1':
-        dolar_value = 0
-        
-
+        valor_en_dolar = peso / dolar
+        print(f'El valor de ${peso} pesos en dolar es: {valor_en_dolar}')
+        scr.pause_screen()
+        return
+    if op == '2':
+        valor_en_euro = peso / euro
+        print(f'El valor de ${peso} pesos en euro es: {valor_en_euro}')
+        scr.pause_screen()
+        return
+    if op == '3':
+        valor_en_peso = euro * euro_a_convertir
+        print(f'El valor de ${euro_a_convertir} euros en peso es: {valor_en_peso}')
+        scr.pause_screen()
+        return
+    if op == '4':
+        valor_en_yen = (peso / yen)
+        print(f'El valor de ${peso} pesos en yen es: {valor_en_yen}')
+        scr.pause_screen()
+        return
 
 
 
