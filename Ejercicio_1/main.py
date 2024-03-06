@@ -15,7 +15,9 @@ if __name__ == '__main__':
     
     #Peso a dolar
     if op == '1':
-        conv.peso_a_dolar()
+        dolar = conv.convert(op)
+        print(dolar)
+        menu.scr.pause_screen()
     #Peso a euros
     if op == '2':
         pass
