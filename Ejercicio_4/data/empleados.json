@@ -1,0 +1,28 @@
+{
+    "1": {
+        "id": "1",
+        "nombre": "Jhoan",
+        "cargo": "Jefe IT",
+        "salario": 2500000.0,
+        "colilla de pagos": {
+            "0": {
+                "mes pagado": "Enero",
+                "fecha pago": "12/1/2024",
+                "sueldo base": 2500000.0,
+                "total horas extra": 83333.33,
+                "cuota prestamo": 80000.0,
+                "descuento por cafeteria": 120000.0,
+                "total a pagar": 2383333.23
+            },
+            "1": {
+                "mes pagado": "2",
+                "fecha pago": "15/2/2024",
+                "sueldo base": 2500000.0,
+                "total horas extra": 20833.3325,
+                "cuota prestamo": 30000.0,
+                "descuento por cafeteria": 20000.0,
+                "total a pagar": 2470833.2325
+            }
+        }
+    }
+}
